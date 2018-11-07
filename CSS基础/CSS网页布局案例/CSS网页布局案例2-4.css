@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  width: 380px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.top img {
+  width: 380px;
+  height: 240px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.topLayer {
+  width: 380px;
+  height: 240px;
+  background-color: #000;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -190px;
+  opacity: 0.5;
+  z-index: 1;
+}

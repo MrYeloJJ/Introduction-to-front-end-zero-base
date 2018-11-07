@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.content .title {
+  font: bold 22px "微软雅黑";
+  text-align: center;
+}
+
+.content .picContent {
+  font-size: 18px;
+}
+
+.content .picContent dl {
+  width: 426px;
+  float: left;
+  padding: 10px;
+}
+
+.content .picContent dl dd {
+  text-align: left;
+}

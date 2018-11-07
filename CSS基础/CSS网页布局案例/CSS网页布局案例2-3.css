@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  min-width: 1250px;
+}
+
+.header img {
+  width: 300px;
+  height: 85px;
+  margin-left: 150px;
+  margin-top: 8px;
+  float: left;
+}
+
+.header .menu {
+  height: 100px;
+  float: right;
+}
+
+.header .menu ul {
+  padding-right: 50px;
+}
+
+.header .menu ul li {
+  width: 80px;
+  line-height: 100px;
+  float: right;
+  list-style-type: none;
+  color: #7d7d7d;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  text-align: center;
+}
+
+.main .top img {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.main .topLayer {
+  width: 100%;
+  height: 600px;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+}
+
+.main .btn {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 400px;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -250px;
+  z-index: 2;
+}
+
+.main .btn .word {
+  color: #fff;
+  font: bold 45px "微软雅黑";
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main .btn button {
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  background-color: #F5704F;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-left: 150px;
+  text-align: center;
+}
