@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  min-width: 1250px;
+}
+
+.header img {
+  width: 300px;
+  height: 85px;
+  margin-left: 150px;
+  margin-top: 8px;
+  float: left;
+}
+
+.header .menu {
+  height: 100px;
+  float: right;
+}
+
+.header .menu ul {
+  padding-right: 50px;
+}
+
+.header .menu ul li {
+  width: 80px;
+  line-height: 100px;
+  float: right;
+  list-style-type: none;
+  color: #7d7d7d;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  text-align: center;
+}
+
+.main .top img {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.main .topLayer {
+  width: 100%;
+  height: 600px;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+}
+
+.main .btn {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 400px;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -250px;
+  z-index: 2;
+}
+
+.main .btn .word {
+  color: #fff;
+  font: bold 45px "微软雅黑";
+  text-align: center;
+  margin-top: 100px;
+}
+
+.main .btn button {
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  background-color: #F5704F;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-left: 150px;
+  text-align: center;
+}
+
+.main .content {
+  color: #7c7d7f;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main .content .clear {
+  clear: both;
+}
+
+.main .content .top {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.main .content .top .none .icon {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+
+.main .content .top .none {
+  /* 方法一 */
+  /* overflow: hidden; */
+}
+
+.main .content .top .none .icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.main .content .top .none .icon .des {
+  padding-top: 20px;
+}
+
+.main .content .top .recept {
+  /* 方法二 */
+  clear: both;
+  padding-top: 50px;
+  text-align: center;
+  color: #E19796;
+  font-style: italic;
+  font-size: 22px;
+}
+
+.main .content .top .picAndDes {
+  padding-top: 50px;
+  /* 方法一 */
+  /* overflow: hidden; */
+}
+
+.main .content .top .picAndDes .icon2 {
+  /* width: 33.3%; */
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+
+.main .content .top .picAndDes .icon2 img {
+  width: 310px;
+  height: 260px;
+}
+
+.main .content .top .picAndDes .icon2 .des1 {
+  padding-top: 10px;
+}
+
+.main .content .top .picAndDes .icon2 .des2 {
+  color: #BDBDBC;
+  padding-top: 10px;
+}
+
+.main .content .bottom {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding-bottom: 30px;
+}
+
+.main .content .bottom-content {
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.main .content .bottom-content .title {
+  text-align: center;
+  font-family: "微软雅黑";
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.main .content .bottom-content .picContent dl {
+  width: 470px;
+  float: left;
+  margin: 10px 12px;
+}
+
+.main .content .bottom-content .picContent dl dt img {
+  width: 470px;
+  height: 480px;
+}
+
+.main .content .bottom-content .picContent dl dd {
+  padding-top: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  background-color: #292C35;
+  font: 15px/100px "微软雅黑";
+  text-align: center;
+}
