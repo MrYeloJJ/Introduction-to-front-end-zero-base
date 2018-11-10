@@ -64,8 +64,9 @@
 }
 
 /* banner */
-.main .banner {
-
+.main .banner .b-img {
+  width: 100%;
+  height: 800px;
 }
 
 .main .banner .b-img img {
@@ -86,10 +87,6 @@
 }
 
 /* 表单 */
-.main .banner .b-form {
-
-}
-
 .main .banner .b-form form {
   width: 505px;
   position: absolute;
@@ -145,27 +142,29 @@
   outline: none;
 }
 
-.main .about {
+/* ABOUT-上半部分 */
+.main .about .about-top {
   width: 1200px;
   height: 800px;
   margin: 0 auto;
 }
 
-.main .about .title {
+/* 同GALLERY样式 */
+.main .title {
   padding-top: 50px;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
 }
 
-.main .about .line {
+.main .line {
   width: 40px;
   height: 2px;
   background-color: #07cbc9;
   margin: 20px 48%;
 }
 
-.main .about .word {
+.main .word {
   width: 510px;
   height: 80px;
   margin: 0 auto;
@@ -174,44 +173,65 @@
   line-height: 1.5em;
 }
 
-.main .about .a-box {
+.main .about .about-top .a-box {
+  width: 1200px;
   height: 500px;
   margin-top: 20px;
   position: relative;
 }
 
-.main .about .a-box .left {
-  width: 400px;
-  float: left;
+.main .about .about-top .a-box .left {
   position: absolute;
-  left: 40px;
   z-index: 2;
 }
 
-.main .about .a-box .left .l-word {
-  width: 300px;
+.main .about .about-top .a-box .left .short-word {
+  width: 250px;
+  font-size: 35px;
   text-align: center;
-  font-size: 40px;
-  margin-left: -30px;
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 
-.main .about .a-box .left .small-box {
-  width: 400px;
-  height: 250px;
+.main .about .about-top .a-box .left .l-box {
+  position: absolute;
+  z-index: 2;
+}
+
+.main .about .about-top .a-box .left .l-box .long-word {
+  width: 320px;
+  line-height: 1.5em;
+  margin-top: 40px;
+  margin-left: 80px;
+  position: absolute;
+  z-index: 2;
+}
+
+.main .about .about-top .a-box .left .l-box button {
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  z-index: 2;
+}
+
+.main .about .about-top .a-box .left .l-box .bottomLayer {
+  width: 380px;
+  height: 280px;
   background-color: #fff;
   opacity: 0.5;
+  border: 1px solid #999;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  z-index: 1;
 }
 
-.main .about .a-box .left .small-box .praesent {
-  padding: 20px 40px;
-  text-align: left;
-  line-height: 1.5em;
-}
-
+/* ABOUT按钮样式相同 */
 .main .about button {
-  width: 100px;
+  width: 110px;
   height: 50px;
   color: #fff;
+  font-size: 16px;
   background-color: #000;
   border-color: #000;
 }
@@ -227,17 +247,97 @@
   border-color: #000;
 }
 
-.main .about .a-box .left .small-box .button {
-  padding-left: 40px;
-}
-
-.main .about .a-box .middle {
+.main .about .about-top .a-box .middle {
+  width: 650px;
+  margin-left: 25%;
   float: left;
-  position: absolute;
-  left: 300px;
 }
 
-.main .about .a-box .middle img {
+.main .about .about-top .a-box .middle img {
   width: 650px;
   height: 435px;
+}
+
+.main .about .about-top .a-box .right {
+  width: 250px;
+  float: left;
+  text-align: center;
+}
+
+.main .about .about-top .a-box .right .r-box {
+  width: 250px;
+  height: 150px;
+  border: 1px solid #07cbc9;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.main .about .about-top .a-box .right .num {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.main .about .about-top .a-box .right .line {
+  margin: 20px 105px;
+}
+
+.main .about .about-top .a-box .right .r-word {
+  font-size: 20px;
+  color: #000;
+}
+
+/* ABOUT-下半部分 */
+.main .about .about-bottom {
+  width: 100%;
+  /* margin-top: px; */
+}
+
+.main .about .about-bottom .eb {
+  width: 25%;
+  height: 400px;
+  float: left;
+}
+
+.main .about .about-bottom .icon img {
+  width: 100%;
+  height: 400px;
+}
+
+.main .about .about-bottom .blue-box {
+  background-color: #07cbc9;
+}
+
+.main .about .about-bottom .blue-box .item {
+  line-height: 1.5em;
+  margin-top: 20px;
+  margin-left: 40px;
+  color: #fff;
+}
+
+.main .about .about-bottom .blue-box .title {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.main .about .about-bottom .blue-box .short-word {
+  width: 360px;
+  font-size: 18px;
+}
+
+.main .about .about-bottom .blue-box .long-word {
+  width: 390px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.main .about .about-bottom .blue-box button {
+  margin-top: 40px;
+  margin-left: 180px;
+}
+
+.main .gallery {
+  width: 1200px;
+  height: 800px;
+  background-color: #ccc;
 }
