@@ -4,9 +4,13 @@
 }
 
 /* 导航 */
-
 .header {
+  width: 100%;
+  height: 100px;
   background-color: #07cbc9;
+  position: fixed;
+  top: 0;
+  z-index: 9;
 }
 
 .header a {
@@ -16,11 +20,6 @@
 
 .header a:link, .header a:visited {
   color: #fff;
-}
-
-.header .big-box {
-  width: 100%;
-  height: 100px;
 }
 
 .header .big-box .logo {
@@ -61,11 +60,12 @@
 .main {
   weight: 100%;
   font-family: "Microsoft YaHei UI";
+  margin-top: 100px;
 }
 
 /* banner */
 .main .banner .b-img {
-  width: 100%;
+  /* 这个不给高度会多4个像素点 */
   height: 800px;
 }
 
@@ -98,7 +98,7 @@
 
 .main .banner .b-form form input {
   width: 500px;
-  height: 59px;
+  height: 60px;
   color: #fff;
   /* 透明色 */
   background-color: transparent;
@@ -180,6 +180,7 @@
   position: relative;
 }
 
+/* about上半部分--左边区 */
 .main .about .about-top .a-box .left {
   position: absolute;
   z-index: 2;
@@ -229,7 +230,7 @@
 /* ABOUT按钮样式相同 */
 .main .about button {
   width: 110px;
-  height: 50px;
+  height: 45px;
   color: #fff;
   font-size: 16px;
   background-color: #000;
@@ -247,6 +248,7 @@
   border-color: #000;
 }
 
+/* about上半部分--中间区 */
 .main .about .about-top .a-box .middle {
   width: 650px;
   margin-left: 25%;
@@ -258,6 +260,7 @@
   height: 435px;
 }
 
+/* about上半部分--右边区 */
 .main .about .about-top .a-box .right {
   width: 250px;
   float: left;
@@ -290,54 +293,120 @@
 /* ABOUT-下半部分 */
 .main .about .about-bottom {
   width: 100%;
-  /* margin-top: px; */
+  position: relative;
 }
 
+/* 八个盒子的共性 */
 .main .about .about-bottom .eb {
   width: 25%;
   height: 400px;
   float: left;
 }
 
+/* 四个图片盒子的部分 */
 .main .about .about-bottom .icon img {
   width: 100%;
   height: 400px;
 }
 
+/* 四个蓝色盒子的部分 */
 .main .about .about-bottom .blue-box {
   background-color: #07cbc9;
+  /* word-break: break-all; */
 }
 
 .main .about .about-bottom .blue-box .item {
+  width: 80%;
   line-height: 1.5em;
   margin-top: 20px;
   margin-left: 40px;
   color: #fff;
 }
 
-.main .about .about-bottom .blue-box .title {
+.main .about .about-bottom .blue-box .bb-title {
   font-size: 28px;
   margin-top: 30px;
 }
 
 .main .about .about-bottom .blue-box .short-word {
-  width: 360px;
   font-size: 18px;
 }
 
 .main .about .about-bottom .blue-box .long-word {
-  width: 390px;
   font-size: 14px;
   color: #ddd;
 }
 
 .main .about .about-bottom .blue-box button {
   margin-top: 40px;
-  margin-left: 180px;
+  margin-left: 40%;
 }
 
+/* 三角箭头 */
+.main .about .about-bottom .blue-box .triangle {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  z-index: 2;
+}
+
+.main .about .about-bottom .blue-box .left-triangle {
+  border-right: 25px solid #07cbc9;
+  top: 188px;
+  margin-left: -25px;
+}
+
+.main .about .about-bottom .blue-box .right-triangle {
+  border-left: 25px solid #07cbc9;
+  top: 588px;
+  margin-left: 25%;
+}
+
+/* GALLERY */
 .main .gallery {
   width: 1200px;
-  height: 800px;
-  background-color: #ccc;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.main .gallery .six-box {
+  margin: 40px 0;
+}
+
+.main .gallery .six-box dl {
+  width: 360px;
+  float: left;
+  margin: 10px 20px;
+}
+
+/* 这个不给高度会多4个像素点 */
+.main .gallery .six-box dl dt {
+  height: 240px;
+}
+
+.main .gallery .six-box dl dt img {
+  width: 360px;
+  height: 240px;
+}
+
+.main .gallery .six-box dl dd {
+  width: 340px;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  line-height: 60px;
+  padding-left: 20px;
+}
+
+/* 页脚 */
+.footer {
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #07cbc9;
 }
