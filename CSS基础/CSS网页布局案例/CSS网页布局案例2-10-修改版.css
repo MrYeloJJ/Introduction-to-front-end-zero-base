@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 导航 */
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #07cbc9;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+.header a {
+  display: block;
+  text-decoration: none;
+}
+
+.header a:link, .header a:visited {
+  color: #fff;
+}
+
+.header .big-box .logo {
+  float: left;
+  margin-top: 26px;
+  margin-left: 120px;
+}
+
+.header .big-box .logo a img {
+  width: 260px;
+  height: 48px;
+}
+
+.header .big-box .menu {
+  height: 100px;
+  float: right;
+}
+
+.header .big-box .menu ul {
+  margin-right: 50px;
+}
+
+.header .big-box .menu ul li {
+  width: 80px;
+  height: 100px;
+  list-style-type: none;
+  float: right;
+  font: bold 15px/100px "Microsoft YaHei UI";
+  color: #fff;
+  text-align: center;
+}
+
+.header .big-box .menu ul li:hover {
+  background-color: #000;
+}
+
+/* 主体 */
+.main {
+  weight: 100%;
+  font-family: "Microsoft YaHei UI";
+  margin-top: 100px;
+}
+
+/* banner */
+.main .banner .b-img {
+  /* 这个不给高度会多4个像素点 */
+  height: 800px;
+}
+
+.main .banner .b-img img {
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+
+/* 遮罩层 */
+.main .banner .topLayer {
+  width: 100%;
+  height: 800px;
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top: 100px;
+  z-index: 1;
+}
+
+/* 表单 */
+.main .banner .b-form form {
+  width: 505px;
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  margin-left: -240px;
+  z-index: 2;
+}
+
+.main .banner .b-form form input {
+  width: 500px;
+  height: 60px;
+  color: #fff;
+  /* 透明色 */
+  background-color: transparent;
+  display: block;
+  margin-bottom: 20px;
+  border: 2px solid #888;
+}
+
+/* input:focus 用于获取焦点时改变边框颜色 */
+/* .main .banner .b-form form input:focus { */
+.main .banner .b-form form input:hover {
+  border-color: #07cbc9;
+}
+
+.main .banner .b-form form textarea {
+  width: 500px;
+  height: 160px;
+  color: #fff;
+  line-height: 60px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  border: 2px solid #888;
+}
+
+.main .banner .b-form form textarea:hover {
+  border-color: #07cbc9;
+}
+
+.main .banner .b-form form .button {
+  width: 150px;
+  margin: 0 auto;
+  color: #777;
+}
+
+.main .banner .b-form form .button:hover {
+  background-color: #07cbc9;
+  border: none;
+  color: #fff;
+}
+
+.main .banner .b-form form .button:focus {
+  outline: none;
+}
+
+/* ABOUT-上半部分 */
+.main .about .about-top {
+  width: 1200px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+/* 同GALLERY样式 */
+.main .title {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.main .line {
+  width: 40px;
+  height: 2px;
+  background-color: #07cbc9;
+  margin: 20px 48%;
+}
+
+.main .word {
+  width: 510px;
+  height: 80px;
+  margin: 0 auto;
+  color: #7d7d7d;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.main .about .about-middle {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* About中间部分--左边区 */
+.main .about .about-middle .left {
+  height: 500px;
+  float: left;
+  position: absolute;
+  z-index: 2;
+}
+
+.main .about .about-middle .left .short-word {
+  width: 250px;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .about .about-middle .left .long-word {
+  width: 320px;
+  line-height: 1.5em;
+  margin-top: 40px;
+  margin-left: 50px;
+  position: absolute;
+  z-index: 2;
+}
+
+.main .about .about-middle .left button {
+  position: absolute;
+  top: 60%;
+  left: 50px;
+  z-index: 2;
+}
+
+.main .about .about-middle .left .bottomLayer {
+  width: 380px;
+  height: 250px;
+  background-color: #fff;
+  opacity: 0.5;
+  border: 1px solid #999;
+  position: absolute;
+  top: 25%;
+  left: 20px;
+  z-index: 1;
+}
+
+/* ABOUT按钮样式相同 */
+.main .about button {
+  width: 110px;
+  height: 45px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #000;
+  border-color: #000;
+}
+
+.main .about button:hover {
+  color: #000;
+  background-color: transparent;
+  border-color: #000;
+}
+
+.main .about button:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* About中间部分--中间区 */
+.main .about .about-middle .middle {
+  width: 650px;
+  margin-left: 250px;
+  float: left;
+}
+
+.main .about .about-middle .middle img {
+  width: 650px;
+  height: 435px;
+}
+
+/* About中间部分--右边区 */
+.main .about .about-middle .right {
+  float: left;
+  text-align: center;
+}
+
+.main .about .about-middle .right .r-box {
+  width: 250px;
+  height: 150px;
+  border: 1px solid #07cbc9;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.main .about .about-middle .right .num {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.main .about .about-middle .right .line {
+  margin: 20px 105px;
+}
+
+.main .about .about-middle .right .r-word {
+  font-size: 20px;
+  color: #000;
+}
+
+/* ABOUT-下半部分 */
+.main .about .about-bottom {
+  width: 100%;
+  position: relative;
+}
+
+/* 八个盒子的共性 */
+.main .about .about-bottom .eb {
+  width: 25%;
+  height: 400px;
+  float: left;
+}
+
+/* 四个图片盒子的部分 */
+.main .about .about-bottom .icon img {
+  width: 100%;
+  height: 400px;
+}
+
+/* 四个蓝色盒子的部分 */
+.main .about .about-bottom .blue-box {
+  background-color: #07cbc9;
+  /* word-break: break-all; */
+}
+
+.main .about .about-bottom .blue-box .item {
+  width: 80%;
+  line-height: 1.5em;
+  margin-top: 20px;
+  margin-left: 40px;
+  color: #fff;
+}
+
+.main .about .about-bottom .blue-box .bb-title {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.main .about .about-bottom .blue-box .short-word {
+  font-size: 18px;
+}
+
+.main .about .about-bottom .blue-box .long-word {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.main .about .about-bottom .blue-box button {
+  /* 自己写的 */
+  /* margin-top: 40px;
+  margin-left: 40%; */
+  /* 老师修改后 */
+  display: block;
+  margin: 40px auto;
+}
+
+/* 三角箭头 */
+.main .about .about-bottom .blue-box .triangle {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  z-index: 2;
+}
+
+.main .about .about-bottom .blue-box .left-triangle {
+  border-right: 25px solid #07cbc9;
+  top: 188px;
+  margin-left: -25px;
+}
+
+.main .about .about-bottom .blue-box .right-triangle {
+  border-left: 25px solid #07cbc9;
+  top: 588px;
+  margin-left: 25%;
+}
+
+/* GALLERY */
+.main .gallery {
+  width: 1200px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.main .gallery .six-box {
+  margin: 40px 0;
+}
+
+.main .gallery .six-box dl {
+  width: 360px;
+  float: left;
+  margin: 10px 20px;
+}
+
+/* 这个不给高度会多4个像素点 */
+.main .gallery .six-box dl dt {
+  height: 240px;
+}
+
+.main .gallery .six-box dl dt img {
+  width: 360px;
+  height: 240px;
+}
+
+.main .gallery .six-box dl dd {
+  width: 340px;
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  line-height: 60px;
+  padding-left: 20px;
+}
+
+/* 页脚 */
+.footer {
+  width: 100%;
+  height: 100px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #07cbc9;
+}
