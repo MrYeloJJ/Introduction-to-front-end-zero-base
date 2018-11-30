@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript流程控制语句1-4</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var price = prompt("请输入商品价格:"), amount = prompt("请输入商品数量:");
+    var total = parseFloat(price) * parseInt(amount);
+    var sum = 0;
+    document.write(total);
+    if(total >= 500) {
+      sum = total * 0.8
+      alert("恭喜你获得满减优惠，现已打八折，只需要支付：" + sum + " 元!");
+    }else {
+      alert("你未获取满减优惠，需要支付：" + total + " 元!");
+    }
+  </script>
+</body>
+</html>

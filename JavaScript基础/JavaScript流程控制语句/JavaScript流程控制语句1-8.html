@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript流程控制语句1-8</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var score = prompt("请输入你的成绩:");
+    if(score < 0 || score > 100) {
+      alert("你输入的成绩有误!!!");
+    } else if(score >= 60 && score < 70) {
+      alert("及格");
+    } else if(score >= 70 && score < 80) {
+      alert("一般");
+    } else if(score >= 80 && score < 90) {
+      alert("良好");
+    } else if(score >= 90 && score <= 100) {
+      alert("优秀");
+    } else {
+      alert("不及格");
+    }
+  </script>
+</body>
+</html>

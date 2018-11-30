@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript流程控制语句1-7</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var phone = prompt("请输入你的手机号码:");
+    if(phone.length == 11) {
+      if(isNaN(phone)) {
+        alert("输入的手机号码必须是11位数字!");
+      } else {
+        alert("号码输入正确!");
+      }
+    } else {
+      alert("请输入11位手机号码!");
+    }
+    console.log(phone);
+  </script>
+</body>
+</html>
