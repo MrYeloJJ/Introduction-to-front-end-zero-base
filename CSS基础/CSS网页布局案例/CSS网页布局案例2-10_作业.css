@@ -107,8 +107,9 @@
   border: 2px solid #888;
 }
 
-/* 获取焦点时改变边框颜色 */
-.main .banner .b-form form input:focus {
+/* input:focus 用于获取焦点时改变边框颜色 */
+/* .main .banner .b-form form input:focus { */
+.main .banner .b-form form input:hover {
   border-color: #07cbc9;
 }
 
@@ -122,7 +123,7 @@
   border: 2px solid #888;
 }
 
-.main .banner .b-form form textarea:focus {
+.main .banner .b-form form textarea:hover {
   border-color: #07cbc9;
 }
 
@@ -239,7 +240,7 @@
 
 .main .about button:hover {
   color: #000;
-  background-color: #fff;
+  background-color: transparent;
   border-color: #000;
 }
 
@@ -338,8 +339,12 @@
 }
 
 .main .about .about-bottom .blue-box button {
-  margin-top: 40px;
-  margin-left: 40%;
+  /* 自己写的 */
+  /* margin-top: 40px;
+  margin-left: 40%; */
+  /* 老师修改后 */
+  display: block;
+  margin: 40px auto;
 }
 
 /* 三角箭头 */
