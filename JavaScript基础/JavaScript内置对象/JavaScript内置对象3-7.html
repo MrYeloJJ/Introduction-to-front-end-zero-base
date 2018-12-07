@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript内置对象3-7</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var str = prompt("请输入敏感字草泥马");
+    for(var i = 0;i < str.length;i++) {
+      if(str.charAt(i) === "草") {
+        document.write("敏感字'草'在" + i + "位置被发现" + "<br/>");
+      }
+    }
+    document.write("敏感字'草'首次出现的位置是" + str.indexOf("草") + "<br/>")
+  </script>
+</body>
+</html>

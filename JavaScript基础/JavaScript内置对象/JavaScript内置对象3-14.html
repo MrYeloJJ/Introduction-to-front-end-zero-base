@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript内置对象3-14</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var str="Program ape world you do not understand";
+    console.log(str.length);
+    // 两个参数代表了开始位置和结束为止，当有负数出现时，负数的参数和字符串的长度相加
+    document.write(str.slice(-27, 17));
+    document.write("<br/>");
+    // 两个参数代表了开始位置和结束为止，当参数为负数时，自动转化为0
+    document.write(str.substring(12, 17));
+    document.write("<br/>");
+    // 两个参数分别代表了开始位置和截取的字符串的长度
+    document.write(str.substr(-27, 5));
+  </script>
+</body>
+</html>

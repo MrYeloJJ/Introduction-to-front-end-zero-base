@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript内置对象2-17</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function funArrayReverse(array) {
+      var new_array = [];
+      console.log(array.length);
+      for(var i = 0;i < array.length;i++) {
+        // var temporary = array.pop();
+        // new_array.push(temporary);
+        new_array.unshift(array[i]);
+      }
+      return new_array;
+    }
+    console.log(funArrayReverse([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+  </script>
+</body>
+</html>

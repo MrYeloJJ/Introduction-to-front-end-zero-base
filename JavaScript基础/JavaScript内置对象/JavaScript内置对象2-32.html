@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript内置对象2-32</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var array = [];
+    var input = null;
+    while(input != "-1") {
+      input = prompt("请输入字符");
+      if(input != "-1") {
+        array.push(input);
+        continue;
+      } else {
+        break;
+      }
+    }
+    array.splice(0, 2, "hello")
+    document.write(array);
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript内置对象2-23</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var input = null;
+    var arr = [];
+    while(input != "-1") {
+      input = Number(prompt("请输入你想排序的数字"));
+      if(input != "-1") {
+        arr.push(input);
+        continue;
+      } else {
+        break;
+      }
+    }
+    arr.sort(function(x, y){return y - x});
+    document.write(arr);
+  </script>
+</body>
+</html>
