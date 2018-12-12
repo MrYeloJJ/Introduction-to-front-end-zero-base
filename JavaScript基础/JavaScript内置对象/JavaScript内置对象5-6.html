@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript内置对象5-6</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var date = new Date();
+    function funOldDate() {
+      document.write("旧时间: " + date + "<br/>" + "<br/>");
+    }
+
+    funOldDate();
+
+    function funNewDate() {
+      var weeksArray = ["日", "一", "二", "三", "四", "五", "六"];
+      var year = date.getFullYear();
+      var month = date.getMonth() + 1;
+      var day = date.getDate();
+      var week = date.getDay();
+      var hour = date.getHours();
+      var minute = date.getMinutes();
+      var second = date.getSeconds();
+      document.write("新时间: 今天是" + year + "年" + month + "月" + day + "日" + "星期" + weeksArray[week] + "<br/>" + "<br/>" + hour + ":" + minute + ":" + second);
+    }
+
+    funNewDate();
+  </script>
+</body>
+</html>

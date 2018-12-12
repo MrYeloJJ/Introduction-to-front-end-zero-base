@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScript内置对象5-10</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function funSetPrompt() {
+      year = Number(prompt("请输入员工的入职年份"));
+      month = Number(prompt("请输入员工的入职月份"));
+      day = Number(prompt("请输入员工的入职时间"));
+      funSetEntryTime(year, month, day);
+    }
+
+    function funSetEntryTime(year, month, day) {
+      var date = new Date();
+      date.setFullYear(year);
+      date.setMonth(month);
+      date.setDate(day);
+      var entryYear = date.getFullYear();
+      var entryMonth = date.getMonth();
+      var entryDate = date.getDate();
+      document.write("该员工入职时间是：" + entryYear + "-" + entryMonth + "-" + entryDate + "<br/>");
+      document.write("该员工入职时间是：" + (entryYear + 3) + "-" + entryMonth + "-" + entryDate + "<br/>");
+    }
+
+
+    var year, month, day;
+    funSetPrompt();
+  </script>
+</body>
+</html>
