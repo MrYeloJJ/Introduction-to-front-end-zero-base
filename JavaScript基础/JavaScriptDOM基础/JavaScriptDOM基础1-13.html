@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScriptDOM基础1-13</title>
+</head>
+<body>
+  <h3>前端知识点</h3>
+  <ul id="listWeb">
+    <li>JavaScript基础</li>
+    <li>CSS基础</li>
+    <li>HTML基础</li>
+    <li>CSS3</li>
+    <li>HTML5</li>
+    <li>jQuery</li>
+    <li>Bootstrap</li>
+    <li>WebApp</li>
+  </ul>
+  <script type="text/javascript">
+     var eles = document.getElementById("listWeb").getElementsByTagName("li");
+     for(var i = 0;i < eles.length;i++) {
+       if(i % 2 == 0) {
+         eles[i].style.backgroundColor = "#ff0";
+       }
+     }
+  </script>
+</body>
+</html>

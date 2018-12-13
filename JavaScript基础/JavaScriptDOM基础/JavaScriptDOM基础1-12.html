@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JavaScriptDOM基础1-12</title>
+</head>
+<body>
+  <div id="div1">第一个div里的内容</div>
+  <div id="div2">第二个div里的内容</div>
+  <div id="div3">第三个div里的内容</div>
+  <div id="div4">第四个div里的内容</div>
+  <script type="text/javascript">
+    var divElements = document.getElementsByTagName("div");
+    console.log(divElements)
+    for(var i = 0;i < divElements.length;i++) {
+      if(i == 0) {
+        divElements[i].style.color = "#f00";
+      } else if(i == 1) {
+        divElements[i].style.backgroundColor = "#0f0";
+      } else if(i == 2) {
+        divElements[i].style.fontWeight = "bold";
+      } else {
+        divElements[i].style.fontSize = "30px";
+      }
+    }
+  </script>
+</body>
+</html>
