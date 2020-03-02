@@ -1,0 +1,14 @@
+div {
+  color: red;
+  font-size: 20px;
+}
+
+div.classgreen {
+  color: green;
+  font-size: 30px;
+}
+
+div#idblue {
+  color: blue;
+  font-size: 25px;
+}

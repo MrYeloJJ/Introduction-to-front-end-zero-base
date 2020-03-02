@@ -1,0 +1,15 @@
+* {
+  font-family: "微软雅黑";
+}
+
+ul, ol {
+  font-size: 20px;
+}
+
+ul li {
+  color: green;
+}
+
+ol li {
+  color: blue;
+}

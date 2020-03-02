@@ -1,0 +1,24 @@
+p a {
+  text-decoration: underline;
+}
+
+p a:link {
+  color: orange;
+}
+
+p a:hover {
+  font-size: 20px;
+  border: 1px solid red;
+}
+
+p.suit a:visited {
+  color: green;
+}
+
+p.wc a:visited {
+  color: blue;
+}
+
+p.skin a:visited {
+  color: purple;
+}

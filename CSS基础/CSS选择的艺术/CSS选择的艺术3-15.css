@@ -1,0 +1,11 @@
+* {
+  font-size: 30px;
+}
+
+.green, p {
+  color: green;
+}
+
+#blue, span {
+  color: blue;
+}

@@ -1,0 +1,33 @@
+div.bigTitle {
+  background-color: gray;
+  font-size: 30px;
+}
+
+div.bodyer div p span {
+  color: blue;
+  font-size: 20px;
+}
+
+div.bodyer div p.title {
+  color: gray;
+}
+
+div.bodyer div ul a:link {
+  color: green;
+}
+
+div.bodyer div ul a:hover {
+  color: blue;
+}
+
+div.bodyer div ul {
+  color: green;
+}
+
+div.bodyer div ul li ol {
+  color: red;
+}
+
+div.bodyer div.div2 ul li ul.ulIsOrange {
+  color: orange;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML表单4-1附加练习题</title>
+</head>
+<body>
+  <h1 align="center">注册信息</h1>
+  <hr color="#369"/>
+  <form action="google.com" method="get">
+    <table width="600px" align="center" bgcolor="#f2f2f2">
+      <tr>
+        <td align="right" width="220px">
+          <span>姓名：</span>
+        </td>
+        <td>
+          <input type="text" name="username" maxlength="4" size="25" placeholder="请输入姓名"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          <span>邮箱：</span>
+        </td>
+        <td>
+          <input type="text" name="email" maxlength="19" size="35" value="@163.com"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          <span>密码：</span>
+        </td>
+        <td>
+          <input type="password" name="paw" maxlength="25" size="25" placeholder="请输入密码"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          <span>确认密码：</span>
+        </td>
+        <td>
+          <input type="password" name="confirmpaw" maxlength="25" size="25" placeholder="请再次确认密码"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          <span>上传照片：</span>
+        </td>
+        <td>
+          <input type="file" name="pushfile"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          <span>性别：</span>
+        </td>
+        <td>
+          <span>男</span>
+          <input type="radio" name="sex" value="man"/>&nbsp;
+          <span>女</span>
+          <input type="radio" name="sex" value="woman" checked/>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">
+          <span>爱好：</span>
+        </td>
+        <td>
+          <span>读书</span>
+          <input type="checkbox" name="hobby" value="readbook" checked/>&nbsp;
+          <span>跳舞</span>
+          <input type="checkbox" name="hobby" value="dancing"/>&nbsp;
+          <span>唱歌</span>
+          <input type="checkbox" name="hobby" value="sing"/>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2">
+          <input type="button" name="clickme" value="来点我"/>&nbsp;
+          <input type="submit" name="submit"/>&nbsp;
+          <input type="reset" name="reset"/>
+        </td>
+        <!--<td></td>-->
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

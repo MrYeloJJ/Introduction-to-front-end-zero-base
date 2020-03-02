@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML表单2-14</title>
+</head>
+<body>
+  <h1 align="center">注册信息</h1>
+  <hr color="#369">
+  <form action="">
+    <table width="600px" bgcolor="#f2f2f2" align="center">
+      <tr>
+        <td>
+          <span>用户名：</span>
+        </td>
+        <td>
+          <input type="text" name="username" maxlength="6" size="25" placeholder="请输入用户名"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>密码：</span>
+        </td>
+        <td>
+          <input type="password" name="paw" maxlength="6" size="25" placeholder="请输入密码"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>确认密码：</span>
+        </td>
+        <td>
+          <input type="password" name="confirmpaw" maxlength="6" size="25" placeholder="请再次确认密码"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>上传照片：</span>
+        </td>
+        <td>
+          <input type="file" name="pushphoto"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>性别：</span>
+        </td>
+        <td>
+          <span>男</span>
+          <input type="radio" name="sex" value="man"/>
+          &nbsp;&nbsp;
+          <span>女</span>
+          <input type="radio" name="sex" value="woman" checked/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>爱好：</span>
+        </td>
+        <td>
+          <input type="checkbox" name="chbox" value="basketball" checked/>
+          <span>篮球</span>&nbsp;&nbsp;
+          <input type="checkbox" name="cebox" value="football"/>
+          <span>足球</span>&nbsp;&nbsp;
+          <input type="checkbox" name="chbox" value="volleyball"/>
+          <span>排球</span>&nbsp;&nbsp;
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

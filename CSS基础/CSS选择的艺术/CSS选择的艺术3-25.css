@@ -1,0 +1,7 @@
+div a:hover {
+  font-size: 30px;
+}
+
+p a:hover {
+  font-weight: bold;
+}
